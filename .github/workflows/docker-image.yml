@@ -60,7 +60,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           
-      - name: Login to ContainerS Registry
+      - name: Login to Containers Registry
         uses: docker/login-action@v1 
         with:
           registry: containers.mathworks.com
