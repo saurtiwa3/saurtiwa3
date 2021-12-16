@@ -60,13 +60,6 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          
-      #- name: Login to Containers Registry
-      #  uses: docker/login-action@v1 
-      #  with:
-      #    registry: containers.mathworks.com
-      #    username: stiwari
-      #    password: ${{ secrets.CONTAINERS_TOKEN }}
 
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
